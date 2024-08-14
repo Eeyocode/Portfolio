@@ -1,0 +1,84 @@
+.header {
+    background: #151515 url('../images/bg2.jfif');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.header::after{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.header .text-container{
+    z-index: 10;
+}
+
+.header .roles{
+    font-family: 'lora-regular', serif;
+}
+
+.header .social {
+    bottom: 68px;
+}
+.about-img {
+    width: 100px; 
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.about-img:hover {
+    transform: scale(1.30);
+    transition: all 0.2s ease-in-out;
+    opacity: 0.8;
+}
+.project:hover {
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
+    opacity: 0.8;
+}
+.portfolio {
+    background: #151515 url('../images/intro-bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.portfolio::after{
+    content:'';
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+.portfolio .container{
+    z-index: 10;
+}
+
+.social1:hover, 
+.social2:hover,
+.social3:hover,
+.social4:hover,
+.social5:hover{
+    transform: scale(1.30);
+    transition: all 0.2s ease-in-out;
+    opacity: 0.8;
+}
+.stats .stat {
+    border-right: 0 !important;
+    margin-bottom: 40px;
+    border-bottom: var(--bs--dark) solid 1px;
+    padding-bottom: 20px;
+}
+@media(max-width:767px) {
+    .header .social i {
+        font-size: 30px;
+    }
+    .header .roles{
+        font-size: 18px !important;
+    }
+    .about-content {
+        flex-direction: column;
+    }
+}
